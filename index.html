@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino React</title>
+    <script defer src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script defer src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script defer src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script defer type="text/babel">
+        // Código react
+        class StudyReact extends React.Component{
+            render(){ //Renderiza o DOM virtual, faz as alterações necessarias
+                return (
+                    <div>
+                        <h1>Olá, estou utiliando o React!!</h1>
+                    </div>
+
+                );
+
+            }
+        }
+ReactDOM.render(<StudyReact />, document.querySelector("#app"));
+    </script>
+</body>
+</html>
